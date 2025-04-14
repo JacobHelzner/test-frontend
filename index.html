@@ -20,7 +20,7 @@
                 city: "New York"
             };
 
-            fetch('https://150.209.91.82:3000/store-json', {
+            fetch('https://hamiltoncollegeprehealthplanning.duckdns.org:3000/store-json', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -38,7 +38,7 @@
         });
 
         document.getElementById('retrieveBtn').addEventListener('click', () => {
-            fetch('https://150.209.91.82:3000/get-json')
+            fetch('https://hamiltoncollegeprehealthplanning.duckdns.org:3000/get-json')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('jsonData').textContent = JSON.stringify(data, null, 2);
